@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptodown"
+version = "1.0.0"
+description = "Offline CNS Lab Program Generator for Lab Exams"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    { name = "namkeenbiskoot" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Education",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = []
+
+[project.scripts]
+cryptodown = "cnslab.cli:main"
+cnslab = "cnslab.cli:main"
+cns = "cnslab.cli:main"
